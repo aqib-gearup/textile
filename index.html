@@ -1,0 +1,594 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+
+<style>
+.darklinks a.social-icon {
+    color:white;
+    border-color:white;
+}
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+.onoffswitch3
+{
+    position: relative; 
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+
+.onoffswitch3-checkbox {
+    display: none;
+}
+
+.onoffswitch3-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 0px solid #999999; border-radius: 0px;
+}
+
+.onoffswitch3-inner {
+    display: block; width: 200%; margin-left: -100%;
+    -moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
+    -o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
+}
+
+.onoffswitch3-inner > span {
+    display: block; float: left; position: relative; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: 'Montserrat', sans-serif; font-weight: bold;
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+.onoffswitch3-inner .onoffswitch3-active {
+    padding-left: 10px;
+    background-color: #EEEEEE; color: #FFFFFF;
+}
+
+.onoffswitch3-inner .onoffswitch3-inactive {
+    width: 100px;
+    padding-left: 16px;
+    background-color: #EEEEEE; color: #FFFFFF;
+    text-align: right;
+}
+
+.onoffswitch3-switch {
+    display: block; width: 50%; margin: 0px; text-align: center; 
+    border: 0px solid #999999;border-radius: 0px; 
+    position: absolute; top: 0; bottom: 0;
+}
+.onoffswitch3-active .onoffswitch3-switch {
+    background: #27A1CA; left: 0;
+    width: 160px;
+}
+.onoffswitch3-inactive{
+    background: #A1A1A1; right: 0;
+    width: 20px;
+}
+.onoffswitch3-checkbox:checked + .onoffswitch3-label .onoffswitch3-inner {
+    margin-left: 0;
+}
+
+.glyphicon-remove{
+    padding: 3px 0px 0px 0px;
+    color: #fff;
+    background-color: #000;
+    height: 25px;
+    width: 25px;
+    border-radius: 15px;
+    border: 2px solid #fff;
+}
+
+.scroll-text{
+    color: #000;
+}
+.morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+}
+</style>
+
+<html class="no-js">
+<!--<![endif]-->
+
+
+<!-- Mirrored from webdesign-finder.com/html/gogreen/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Oct 2018 06:33:19 GMT -->
+<head>
+	<title>Gear Up Trade</title>
+	<meta charset="utf-8">
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css" class="color-switcher-link">
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+
+	<!--[if lt IE 9]>
+		
+	<![endif]-->
+
+</head>
+
+<body>
+
+
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+
+	<div class="preloader">
+		<div class="preloader_image"></div>
+	</div>
+
+	<!-- search modal -->
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">
+				<i class="rt-icon2-cross2"></i>
+			</span>
+		</button>
+		<div class="widget widget_search">
+			<form method="get" class="searchform search-form form-inline" action="http://webdesign-finder.com/html/gogreen/">
+				<div class="form-group">
+					<input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input">
+				</div>
+				<button type="submit" class="theme_button">Search</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- Unyson messages modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+		<div class="fw-messages-wrap ls with_padding">
+			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+			<!--
+		<ul class="list-unstyled">
+			<li>Message To User</li>
+		</ul>
+		-->
+
+		</div>
+	</div>
+	<!-- eof .modal -->
+
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+
+			<!-- template sections -->
+
+			
+
+			<header class="page_header header_white toggler_xs_right section_padding_20">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-12 display_table">
+							<div class="header_left_logo display_table_cell">
+								<a href="index.html" class="logo top_logo">
+									<img src="images/logo.png" alt="">
+									<span class="logo_text">
+										<span class="big" style= color:#c14543>Gear Up Trade</span>
+										<span class="small-text" style="padding-top:10px;">DRIVE YOUR BUSINESS WITH GEAR UP TRADE</span>
+									</span>
+								</a>
+							</div>
+
+							<div class="header_mainmenu display_table_cell text-center">
+								<!-- main nav start -->
+								<nav class="mainmenu_wrapper">
+								<div class="row">
+								<span class="active">
+								<a href="index.html" style="margin-left: 4%; color: #c14543;">Home</a>
+								</span>
+								<a href="#about_section" style="margin-left: 4%; color: #c14543;">About Us</a>
+								
+								<a href="#mission_section" style="margin-left: 4%; color: #c14543;">Mission</a>
+								
+								<a href="#certificate_section" style="margin-left: 4%; color: #c14543;">Certificates</a>
+								
+									<a href="#contact_section" style="margin-left: 4%; color: #c14543;">Contact Us</a>
+									
+										
+								</div>
+									
+								</nav>
+								<!-- eof main nav -->
+								<!-- header toggler -->
+								 <span class="toggle_menu">
+									 <span></span> 
+								</span> 
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<section class="intro_section page_mainslider ds">
+			<div class="container-fluid" style="background-color: white ;padding-left:20px; padding-right:20px;" ;>
+				<div class="flexslider" data-dots="false">
+					<ul class="slides">
+
+					
+
+						<li>
+							<img src="images/slide-2.jpg" alt="">
+						
+						</li>
+						
+													<li>
+							<img src="images/BUILD Banner.jpg" alt="">
+						
+						</li>
+						
+							<li>
+							<img src="images/slide-6.jpg" alt="">
+						
+						</li>
+						
+						
+						<li>
+							<img src="images/slide-8.jpg" alt="">
+						
+						</li>
+							<li>
+							<img src="images/Slide-9.jpg" alt="">
+						
+						</li>
+						<li>
+							<img src="images/slide-5.jpg" alt="">
+						
+						</li>
+						<li>
+							<img src="images/slide-1.jpg" alt="">
+						
+						</li>
+						<li>
+							<img src="images/slide-4.jpg" alt="">
+						
+						</li>
+						<li>
+							<img src="images/slide-3.jpg" alt="">
+						
+						</li>
+						<li>
+							<img src="images/slide-7.jpg" alt="">
+						
+						</li>
+			<section class="ds section_padding_top_15 section_padding_bottom_15 table_section section_bottom_overlap">
+			
+			</section>
+
+						</li>
+
+						
+						
+
+					</ul>
+				
+				</div>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+					
+
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="onoffswitch3">
+    <input type="checkbox" name="onoffswitch3" class="onoffswitch3-checkbox" id="myonoffswitch3" checked>
+    <label class="onoffswitch3-label" for="myonoffswitch3">
+        <span class="onoffswitch3-inner">
+            <span class="onoffswitch3-active">
+                <marquee class="scroll-text"><span class="glyphicon glyphicon-forward"></span> We are a registered organization connecting international buyers with reliable suppliers.
+<span class="glyphicon glyphicon-forward"></span> We are commercial exporters for yarn, fabric, home textile, towels, carpets and tents.
+<span class="glyphicon glyphicon-forward"></span> We believe that the quality of our information and the strength of our relationship are the key to our success as agent.
+				</marquee>
+                <span class="onoffswitch3-switch"> <span class="glyphicon glyphicon-remove"></span></span>
+            </span>
+            
+        </span>
+    </label>
+</div>
+					
+					<div class="row"  > 
+
+					
+					
+										</div>
+				<!-- eof flexslider -->
+
+				<div class="scroll_button_wrap">
+					<a href="#about" class="scroll_button">
+						<span class="sr-only">scroll down</span>
+					</a>
+				</div>
+			</section>
+
+			<section id="about" class="ls section_padding_top_100">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2 text-center">
+							<h3 class="section_header with_icon" style="color: #c14543" >
+								Welcome to Gear Up Trade
+							</h2>
+							<p class="small-text grey">More About Us</p>
+							<p class="bottommargin_30">
+					We are trading and sourcing organization. We play a role as a mediator between our global clients and the textile manufacturers in Pakistan, who are the leaders in their fields with the reliable production techniques and experience. We are overseeing everything from customer services to simplifies the sourcing for textile brands across the globe, devoting ourselves to sourcing the required product with the best price and on time delivery. The aim of the Gear Up Trade is to provide professional services and exceeds client’s expectations. We are dealing with Yarn, Fabric, Home Textile, Towels, Carpets & Tents.
+
+
+				</p>
+			
+						</div>
+					</div>
+				
+					</div>
+				</div>
+			</section>
+
+			
+	<section id="about_section" class="ls section_padding_top_100 section_padding_bottom_150">
+			<div class="row">
+						<div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2 text-center">
+							<h3 class="section_header with_icon" style="color: #c14543" >
+						<h2 style="color: #c14543"> About Us  </h2>
+						
+						<p class="bottommargin_30">
+						Gear Up Trade is established by a vigorous team of textile experts with a demonstrated history of working experience in exporting textile products to international markets. Our professionals act as the first point of contact between you and the textile manufacturing companies located in Pakistan.
+Continually striving to be the best, We are committed to providing high-quality products and services to our international clients. We always seek to extend their efforts beyond providing outstanding products and services to those who want to grow
+
+						</p>
+			
+						</div>
+					</div>
+				
+				
+				
+						</section>
+			
+
+			<section id="mission_section" class="ls overflow_hidden half_section section_padding_top_100 section_padding_bottom_150 columns_padding_80">
+				<div class="image_cover image_cover_left">
+					<!-- you can put your image here instead of puting it in column-->
+					<!-- <img src="img/parallax/half_image.jpg" alt=""> -->
+				</div>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-6">
+							<img src="img/parallax/half_image.jpg" alt="">
+						</div>
+						<!-- .col-* -->
+						<div class="col-md-6">
+
+							<h2 class="section_header with_icon" style="color: #c14543">
+								Our Mission
+							</h2>
+							<p class="small-text grey">About us</p>
+
+							<p>
+							<blockquote>
+				DRIVE YOUR BUSINESS WITH GEAR UP TRADE
+						  </blockquote>
+				</p>
+
+							<div class="panel-group" id="accordion1">
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion1" href="#collapse1">
+												<i class="fa fa-envelope"></i>
+												Mission
+											</a>
+										</h4>
+									</div>
+									<div id="collapse1" class="panel-collapse collapse in">
+										<div class="panel-body">
+										We are committed to achieve long-term sustainability of clients by surpasses their desires.
+											</div>
+											
+									</div>
+								</div>
+								
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<!-- .col-* -->
+
+
+					</div>
+				</div>
+
+			</section>
+
+
+		<section id="certificate_section" class="ls overflow_hidden half_section section_padding_top_100 section_padding_bottom_150 columns_padding_80">
+			<div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2 text-center">
+			<h3 class="section_header with_icon" style="color: #c14543" >
+						<h2 style="color: #c14543"> Our Products  </h2>
+						<br>
+						<ul style="padding-left: 45%;">
+							<li style="padding-right: 75%;"> Yarn </li>
+							<li style="padding-right: 75%;"> Fabric </li>
+							<li style="padding-right: 70%;"> Home Textiles </li>
+							<li style="padding-right: 75%;"> Towels </li>
+							<li style="padding-right: 75%;"> Carpets </li>
+							<li style="padding-right: 75%;"> Tents </li>
+						</ul>
+						</div>
+  		</section>
+
+		<section id="certificate_section" class="ls overflow_hidden half_section section_padding_top_100 section_padding_bottom_150 columns_padding_80">
+			<div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2 text-center">
+			<h3 class="section_header with_icon" style="color: #c14543" >
+						<h2 style="color: #c14543"> Certificates  </h2>
+						<br>
+						<p> Our suppliers comply with national and international regulations and standards </p>
+						</div>
+		<div class="row">
+			<img src="images/first.jpg" alt="" style="padding-left: 10%;"> 
+			<img src="images/second.png" alt="" style="padding-left: 06%;">
+			<img src="images/third.jpg" alt="" style="padding-left: 05%;">
+			<img src="images/nine.jpg" alt="" style="padding-left: 04%;">	
+		</div>
+		<br>
+		<br>
+		<div class="row">
+			<img src="images/forth.jpg" alt="" style="padding-left: 12%;">
+			<img src="images/fifth.jpg" alt="" style="padding-left: 12%;">
+			<img src="images/six.png" alt="" style="padding-left: 12%;">
+			<img src="images/seven.png" alt="" style="padding-left: 12%;">
+			<img src="images/eight.png" alt="" style="padding-left: 12%;">
+					
+		</div>
+				
+
+</section>		
+
+
+<section  id="contact_section" class="ls overflow_hidden half_section section_padding_top_100 section_padding_bottom_150 columns_padding_80" style="padding-top: 5%;">
+			<footer class="page_footer ds section_padding_top_100 section_padding_bottom_65 columns_padding_25">
+		
+				<div class="container">
+				
+					<div class="row">
+	<div class="col-md-4 col-sm-12 text-center">
+	<img src="images/logo.png" alt="" style="height:200px;">
+	
+	</div>
+						<div class="col-md-4 col-sm-6 text-center">
+
+
+							<div class="widget widget_recent_entries topmargin_10" >
+
+								<h3 class="widget-title" style="color: #c14543">Contact Us</h3>
+								<ul class="greylinks">
+									<li>
+										<p class="margin_0">
+								<p >
+									Phone Number	</p>
+							</p>
+										<span class="entry-date highlight">
+											<time class="entry-date" datetime="2017-03-13T08:50:40+00:00" style="color: #c14543">
+												+ 92-336-4771577
+											</time>
+										</span>
+									</li>
+									<li>
+										<p class="margin_0">
+								<p>
+								Name
+								</p>
+							</p>
+										<span class="entry-date highlight">
+											<time class="entry-date" datetime="2017-03-13T08:50:40+00:00" style="color: #c14543">
+												Hafiz Muhammad Kashif
+											</time>
+										</span>
+									</li>
+									<li>
+										<p class="margin_0">
+								<p>
+								<i class="fa fa-map-marker highlight2" aria-hidden="true"></i>
+									
+                    Email : gearuptrade@outlook.com
+							</p>
+								<img src="images/linkedin.png" alt="" style="padding-left: 05%;">
+								<a href="https://www.linkedin.com/in/gear-up-trade-27836b194/" style="margin-left: 4%; color: #c14543;">Follow us on LinkedIn</a>
+										<span class="entry-date highlight">
+											
+										</span>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</footer>
+
+			<section class="ls page_copyright section_padding_15">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<p class="small-text small-spacing grey">&copy; Copyright 2017 All Rights Reserved</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+		<!-- eof #box_wrapper -->
+		</section>
+	</div>
+	<!-- eof #canvas -->
+
+	<script src="js/compressed.js"></script>
+	<script src="js/main.js"></script>
+	<!-- <script src="js/switcher.js"></script> -->
+
+	<!-- Google Map Script -->
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTwYSMRGuTsmfl2z_zZDStYqMlKtrybxo"></script>
+</body>
+<script>
+$(document).ready(function() {
+    // Configure/customize these variables.
+    var showChar = 250;  // How many characters are shown by default
+    var ellipsestext = "...";
+    var moretext = "Show more >";
+    var lesstext = "Show less";
+    
+
+    $('.more').each(function() {
+        var content = $(this).html();
+ 
+        if(content.length > showChar) {
+ 
+            var c = content.substr(0, showChar);
+            var h = content.substr(showChar, content.length - showChar);
+ 
+            var html = c + '<span class="moreellipses">' + ellipsestext+ ' </span><span class="morecontent"><span>' + h + '</span>  <a href="" class="morelink">' + moretext + '</a></span>';
+ 
+            $(this).html(html);
+        }
+ 
+    });
+ 
+    $(".morelink").click(function(){
+        if($(this).hasClass("less")) {
+            $(this).removeClass("less");
+            $(this).html(moretext);
+        } else {
+            $(this).addClass("less");
+            $(this).html(lesstext);
+        }
+        $(this).parent().prev().toggle();
+        $(this).prev().toggle(1000);
+        return false;
+    });
+});
+</script>
+	
+
+<!-- Mirrored from webdesign-finder.com/html/gogreen/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Oct 2018 06:37:23 GMT -->
+</html>
